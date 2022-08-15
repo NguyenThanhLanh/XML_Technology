@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLSV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SinhVien" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaSV" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="sv[0-9]{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenSV" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="GioiTinh" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Nam"></xs:enumeration>
+                                        <xs:enumeration value="Nữ"></xs:enumeration>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="NgaySinh" minOccurs="1" maxOccurs="1" type="xs:date"/>
+                            <xs:element name="MaLop" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Lop" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaLop" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="TenLop" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="SV_Key">
+            <xs:selector xpath="SinhVien"/>
+            <xs:field xpath="MaSV"/>
+        </xs:key>
+        <xs:key name="Lop_key">
+            <xs:selector xpath="Lop"/>
+            <xs:field xpath="MaLop"/>
+        </xs:key>
+        <xs:keyref name="SV_LOP_key" refer="Lop_key">
+            <xs:selector xpath="SinhVien"/>
+            <xs:field xpath="MaLop"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

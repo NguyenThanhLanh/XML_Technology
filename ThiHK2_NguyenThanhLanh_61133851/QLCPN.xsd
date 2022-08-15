@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLCPN">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="KhachHang" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaKH" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="K[0-9]{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="HoDemKH" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="TenKH" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="DiaChi" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="DienThoai" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{3}.[0-9]{4}.[0-9]{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="PhieuVanChuyen" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaPhieu" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="P[0-9]{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="Ngay" minOccurs="1" maxOccurs="1" type="xs:date"/>
+                            <xs:element name="TenHang" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="KhoiLuong" minOccurs="1" maxOccurs="1" >
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="NguoiNhan" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="DienThoaiNN" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{3}.[0-9]{4}.[0-9]{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaKH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="K[0-9]{3}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaNoiDen" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z]{2}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="NoiDen" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaNoiDen" minOccurs="1" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z]{2}"></xs:pattern>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenNoiDen" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="SoKm" minOccurs="1" maxOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minExclusive value="0"></xs:minExclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="GiaVC" minOccurs="1" type="xs:double"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="KH_Key">
+            <xs:selector xpath="KhachHang"/>
+            <xs:field xpath="MaKH"/>
+        </xs:key>
+        <xs:key name="PVC_Key">
+            <xs:selector xpath="PhieuVanChuyen"/>
+            <xs:field xpath="MaPhieu"/>
+        </xs:key>
+        <xs:key name="NoiDen_Key">
+            <xs:selector xpath="NoiDen"/>
+            <xs:field xpath="MaNoiDen"/>
+        </xs:key>
+        <xs:keyref name="PVC_KH_Key" refer="KH_Key">
+            <xs:selector xpath="PhieuVanChuyen"/>
+            <xs:field xpath="MaKH"/>
+        </xs:keyref>
+        <xs:keyref name="PVC_ND_Key" refer="NoiDen_Key">
+            <xs:selector xpath="PhieuVanChuyen"/>
+            <xs:field xpath="MaNoiDen"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

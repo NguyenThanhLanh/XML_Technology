@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT KhachHang (MaKH, TenKH, DiaChi, MatHangs) >
+<!ELEMENT MaKH (#PCDATA) >
+<!ELEMENT TenKH (#PCDATA) >
+<!ELEMENT DiaChi (#PCDATA) >
+<!ELEMENT MatHangs (MatHang)* >
+<!ELEMENT MatHang (MaMatHang, TenMatHang, SoLuong, DonGia) >
+<!ELEMENT MaMatHang (#PCDATA) >
+<!ELEMENT TenMatHang (#PCDATA) >
+<!ELEMENT SoLuong (#PCDATA) >
+<!ELEMENT DonGia (#PCDATA) >

@@ -1,0 +1,6 @@
+Các kí tự được định nghĩa trong XML
+&amp cho &
+&lt cho <
+&gt cho >
+&apos cho ' 
+&quot cho "

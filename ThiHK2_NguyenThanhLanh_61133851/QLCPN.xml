@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="QLCPN.xsl"?>
+<QLCPN xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="QLCPN.xsd">
+    <KhachHang>
+        <MaKH>K001</MaKH>
+        <HoDemKH>Lê Văn</HoDemKH>
+        <TenKH>Ba</TenKH>
+        <DiaChi>Nha Trang</DiaChi>
+        <DienThoai>098.3456.333</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>K002</MaKH>
+        <HoDemKH>Lê Thị</HoDemKH>
+        <TenKH>Lan</TenKH>
+        <DiaChi>Ninh Hòa</DiaChi>
+        <DienThoai>090.6543.567</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>K003</MaKH>
+        <HoDemKH>La Văn</HoDemKH>
+        <TenKH>Cầu</TenKH>
+        <DiaChi>Qui Nhơn</DiaChi>
+        <DienThoai>090.1234.779</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>K004</MaKH>
+        <HoDemKH>Nguyễn Văn</HoDemKH>
+        <TenKH>Trương</TenKH>
+        <DiaChi>Sài Gòn</DiaChi>
+        <DienThoai>090.1234.778</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>K005</MaKH>
+        <HoDemKH>Cao Văn</HoDemKH>
+        <TenKH>Liêm</TenKH>
+        <DiaChi>Lào Cai</DiaChi>
+        <DienThoai>070.6789.080</DienThoai>
+    </KhachHang>
+    <PhieuVanChuyen>
+        <MaPhieu>P001</MaPhieu>
+        <Ngay>2012-04-08</Ngay>
+        <TenHang>Xe đạp</TenHang>
+        <KhoiLuong>17</KhoiLuong>
+        <NguoiNhan>Hồ Thị An</NguoiNhan>
+        <DienThoaiNN>080.7898.090</DienThoaiNN>
+        <MaKH>K001</MaKH>
+        <MaNoiDen>SG</MaNoiDen>
+    </PhieuVanChuyen>
+    <PhieuVanChuyen>
+        <MaPhieu>P002</MaPhieu>
+        <Ngay>2012-02-20</Ngay>
+        <TenHang>Nước ngọt</TenHang>
+        <KhoiLuong>22</KhoiLuong>
+        <NguoiNhan>Mai Văn Hòa</NguoiNhan>
+        <DienThoaiNN>097.7656.987</DienThoaiNN>
+        <MaKH>K005</MaKH>
+        <MaNoiDen>TB</MaNoiDen>
+    </PhieuVanChuyen>
+    <PhieuVanChuyen>
+        <MaPhieu>P003</MaPhieu>
+        <Ngay>2021-03-20</Ngay>
+        <TenHang>Bóng bàn</TenHang>
+        <KhoiLuong>700</KhoiLuong>
+        <NguoiNhan>Hồ Thị Châu</NguoiNhan>
+        <DienThoaiNN>090.7896.899</DienThoaiNN>
+        <MaKH>K003</MaKH>
+        <MaNoiDen>HN</MaNoiDen>
+    </PhieuVanChuyen>
+    <PhieuVanChuyen>
+        <MaPhieu>P004</MaPhieu>
+        <Ngay>2021-09-02</Ngay>
+        <TenHang>Nho Mỹ</TenHang>
+        <KhoiLuong>500</KhoiLuong>
+        <NguoiNhan>Cao Minh Vương</NguoiNhan>
+        <DienThoaiNN>098.7798.564</DienThoaiNN>
+        <MaKH>K004</MaKH>
+        <MaNoiDen>BD</MaNoiDen>
+    </PhieuVanChuyen>
+    <PhieuVanChuyen>
+        <MaPhieu>P005</MaPhieu>
+        <Ngay>2022-07-02</Ngay>
+        <TenHang>Bánh Kem</TenHang>
+        <KhoiLuong>21</KhoiLuong>
+        <NguoiNhan>Nguyễn Thành Lãnh</NguoiNhan>
+        <DienThoaiNN>098.7865.999</DienThoaiNN>
+        <MaKH>K003</MaKH>
+        <MaNoiDen>BD</MaNoiDen>
+    </PhieuVanChuyen>
+    <NoiDen>
+        <MaNoiDen>SG</MaNoiDen>
+        <TenNoiDen>Sài Gòn</TenNoiDen>
+        <SoKm>450</SoKm>
+        <GiaVC>70000</GiaVC>
+    </NoiDen>
+    <NoiDen>
+        <MaNoiDen>KH</MaNoiDen>
+        <TenNoiDen>Khánh Hòa</TenNoiDen>
+        <SoKm>720</SoKm>
+        <GiaVC>400000</GiaVC>
+    </NoiDen>
+    <NoiDen>
+        <MaNoiDen>HN</MaNoiDen>
+        <TenNoiDen>Hà Nội</TenNoiDen>
+        <SoKm>840</SoKm>
+        <GiaVC>500000</GiaVC>
+    </NoiDen>
+    <NoiDen>
+        <MaNoiDen>BD</MaNoiDen>
+        <TenNoiDen>Bình Định</TenNoiDen>
+        <SoKm>456</SoKm>
+        <GiaVC>450000</GiaVC>
+    </NoiDen>
+    <NoiDen>
+        <MaNoiDen>TB</MaNoiDen>
+        <TenNoiDen>Thái Bình</TenNoiDen>
+        <SoKm>450</SoKm>
+        <GiaVC>890000</GiaVC>
+    </NoiDen>
+</QLCPN>

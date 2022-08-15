@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="KetQua.xsl"?>
+<QLKQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/CongNghe_XML_VaUngDung/BTChuong7_XSLT/BT4/KetQua.xsd">
+    <KetQua>
+        <MaSV>sv01</MaSV>
+        <MaMH>THDC</MaMH>
+        <DiemThi>10</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSV>sv01</MaSV>
+        <MaMH>THVP</MaMH>
+        <DiemThi>9.5</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSV>sv02</MaSV>
+        <MaMH>THDC</MaMH>
+        <DiemThi>9</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSV>sv02</MaSV>
+        <MaMH>THVP</MaMH>
+        <DiemThi>8</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSV>sv03</MaSV>
+        <MaMH>THDC</MaMH>
+        <DiemThi>7</DiemThi>
+    </KetQua>
+    <KetQua>
+        <MaSV>sv03</MaSV>
+        <MaMH>THVP</MaMH>
+        <DiemThi>4.5</DiemThi>
+    </KetQua>
+</QLKQ>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="SPECIALS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TITLE" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                <xs:element name="MESSAGE" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                <xs:element name="CD" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="ARTIST" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="PRICEUS" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="PRICEVN" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                            <xs:element name="TRACK" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType mixed="true">
+                                    <xs:attribute name="LENGTH"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

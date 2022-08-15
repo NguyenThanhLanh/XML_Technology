@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QuanLyLop SYSTEM "file:/D:/CongNghe_XML_VaUngDung/BaiTap1.dtd">
+<?xml-stylesheet type="text/xsl" href="QLSV.xsl"?>
+<QuanLyLop>
+    <LopHoc>
+        <MaLop>LH001</MaLop>
+        <TenLop>Công nghệ thông tin</TenLop>
+    </LopHoc>
+    <LopHoc>
+        <MaLop>LH002</MaLop>
+        <TenLop>Công nghệ thực phẩm</TenLop>
+    </LopHoc>
+    <LopHoc>
+        <MaLop>LH003</MaLop>
+        <TenLop>Công nghệ sinh học</TenLop>
+    </LopHoc>
+</QuanLyLop>

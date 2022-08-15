@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <OrderDetail>
+      <OrderDate>2006-6-6</OrderDate>
+      <Customer>Peter CollingWood</Customer>
+      <Item>
+          <Item1 ProductID="3" Quantity="3"/>
+          <Item2 ProductID="1" Quantity="5"/>
+      </Item>
+  </OrderDetail>  
+</document>

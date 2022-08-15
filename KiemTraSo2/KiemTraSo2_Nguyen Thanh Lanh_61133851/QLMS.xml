@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="QLMS.xsl"?>
+<QLMS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/D:/XML/BTXML/OnTapXML/KtraMau1/QLMS.xsd">
+    <TheLoai>
+        <MaTL>01</MaTL>
+        <TenTL>Khoa học và đời sống</TenTL>
+    </TheLoai>
+    <TheLoai>
+        <MaTL>02</MaTL>
+        <TenTL>Công nghệ thông tin</TenTL>
+    </TheLoai>
+    <TheLoai>
+        <MaTL>03</MaTL>
+        <TenTL>Thế giới hoang dã</TenTL>
+    </TheLoai>
+    <TheLoai>
+        <MaTL>04</MaTL>
+        <TenTL>Tình cảm</TenTL>
+    </TheLoai>
+    <TheLoai>
+        <MaTL>05</MaTL>
+        <TenTL>Kỹ năng sống</TenTL>
+    </TheLoai>
+    
+    <Sach>
+        <MaSach>A10101</MaSach>
+        <TenSach>Công nghệ thông tin</TenSach>
+        <TacGia>ĐHNT</TacGia>
+        <MaTL>05</MaTL>
+    </Sach>
+    <Sach>
+        <MaSach>A10102</MaSach>
+        <TenSach>Cafe cùng Tony</TenSach>
+        <TacGia>John</TacGia>
+        <MaTL>02</MaTL>
+    </Sach>
+    <Sach>
+        <MaSach>A10103</MaSach>
+        <TenSach>Không quan tâm</TenSach>
+        <TacGia>Thiếu niên</TacGia>
+        <MaTL>04</MaTL>
+    </Sach>
+    <Sach>
+        <MaSach>A10104</MaSach>
+        <TenSach>Cái quần</TenSach>
+        <TacGia>Mark</TacGia>
+        <MaTL>01</MaTL>
+    </Sach>
+    <Sach>
+        <MaSach>A10105</MaSach>
+        <TenSach>Cái áo</TenSach>
+        <TacGia>Thiếu niên</TacGia>
+        <MaTL>03</MaTL>
+    </Sach>
+    
+    <TheDocGia>
+        <MaThe>PM0001</MaThe>
+        <TenDG>Chí Phèo</TenDG>
+        <DiaChi>Nha Trang</DiaChi>
+        <NgayCap>2021-04-03</NgayCap>
+    </TheDocGia>
+    <TheDocGia>
+        <MaThe>PM0002</MaThe>
+        <TenDG>Tố Hữu</TenDG>
+        <DiaChi>Ninh Hòa</DiaChi>
+        <NgayCap>2021-04-09</NgayCap>
+    </TheDocGia>
+    <TheDocGia>
+        <MaThe>PM0003</MaThe>
+        <TenDG>Nam Cao</TenDG>
+        <DiaChi>Ninh Thượng</DiaChi>
+        <NgayCap>2021-05-03</NgayCap>
+    </TheDocGia>
+    <TheDocGia>
+        <MaThe>PM0004</MaThe>
+        <TenDG>Mít</TenDG>
+        <DiaChi>Nha Trang</DiaChi>
+        <NgayCap>2021-04-13</NgayCap>
+    </TheDocGia>
+    <TheDocGia>
+        <MaThe>PM0005</MaThe>
+        <TenDG>Cao Văn Cầu</TenDG>
+        <DiaChi>Ninh Sim</DiaChi>
+        <NgayCap>2019-12-03</NgayCap>
+    </TheDocGia>
+    
+    <ChiTietMuon>
+        <MaThe>PM0005</MaThe>
+        <MaSach>A10103</MaSach>
+        <NgayMuon>2021-02-03</NgayMuon>
+        <TaiCho>Tại chỗ</TaiCho>
+    </ChiTietMuon>
+    <ChiTietMuon>
+        <MaThe>PM0001</MaThe>
+        <MaSach>A10101</MaSach>
+        <NgayMuon>2019-03-05</NgayMuon>
+        <NgayTra>2019-04-02</NgayTra>
+        <TaiCho>Về nhà</TaiCho>
+    </ChiTietMuon>
+    <ChiTietMuon>
+        <MaThe>PM0002</MaThe>
+        <MaSach>A10103</MaSach>
+        <NgayMuon>2021-02-03</NgayMuon>
+        <TaiCho>Tại chỗ</TaiCho>
+    </ChiTietMuon>
+    <ChiTietMuon>
+        <MaThe>PM0002</MaThe>
+        <MaSach>A10104</MaSach>
+        <NgayMuon>2021-04-03</NgayMuon>
+        <NgayTra>2021-04-09</NgayTra>
+        <TaiCho>Về nhà</TaiCho>
+    </ChiTietMuon>
+    <ChiTietMuon>
+        <MaThe>PM0004</MaThe>
+        <MaSach>A10105</MaSach>
+        <NgayMuon>2019-05-03</NgayMuon>
+        <TaiCho>Tại chỗ</TaiCho>
+    </ChiTietMuon>
+    
+    <LePhi>
+        <MaThe>PM0001</MaThe>
+        <Nam>2021</Nam>
+        <LePhi>80000</LePhi>
+    </LePhi>
+    <LePhi>
+        <MaThe>PM0002</MaThe>
+        <Nam>2020</Nam>
+        <LePhi>90000</LePhi>
+    </LePhi>
+    <LePhi>
+        <MaThe>PM0003</MaThe>
+        <Nam>2021</Nam>
+        <LePhi>50000</LePhi>
+    </LePhi>
+    <LePhi>
+        <MaThe>PM0004</MaThe>
+        <Nam>2021</Nam>
+        <LePhi>100000</LePhi>
+    </LePhi>
+    <LePhi>
+        <MaThe>PM0005</MaThe>
+        <Nam>2021</Nam>
+        <LePhi>95000</LePhi>
+    </LePhi>
+</QLMS>

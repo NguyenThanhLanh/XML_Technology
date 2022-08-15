@@ -1,0 +1,11 @@
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.csproj.AssemblyReference.cache
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.csproj.SuggestedBindingRedirects.cache
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.Form1.resources
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.Properties.Resources.resources
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.csproj.GenerateResource.cache
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.csproj.CoreCompileInputs.cache
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\bin\Debug\QLBC.exe.config
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\bin\Debug\QLBC.exe
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\bin\Debug\QLBC.pdb
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.exe
+D:\CongNghe_XML_VaUngDung\BTNhom\QLBC\obj\Debug\QLBC.pdb

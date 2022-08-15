@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <Order>
+        <OrderDate>2006-6-6</OrderDate>
+        <Customer>Helen Mooney</Customer>
+        <Products>
+            <Product ProductID="2" Quantity="2"/>
+            <Product ProductID="4" Quantity="3"/>
+        </Products>
+        <Catalogs >
+            <Catalog>
+                <CategoryName>Beverages</CategoryName>
+                <Products>
+                    <Product ProductID="1" ProductName="Coca-Cola"/>
+                </Products>
+            </Catalog>
+            
+            <Catalog>
+                <CategoryName>Furiture</CategoryName>
+                <Products>
+                    <ProductItem1 ProductID="2" ProductName="Chair"/>
+                    <ProductItem2 ProductID="2" ProductName="Desk"/>
+                </Products>
+            </Catalog>
+        </Catalogs>
+    </Order>
+</document>

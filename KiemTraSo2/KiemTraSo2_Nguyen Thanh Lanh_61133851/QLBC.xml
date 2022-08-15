@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="QLBC.xsl"?>
+<QLBC xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="QLBC.xsd">
+    <MatHang>
+        <MaMH>MH001</MaMH>
+        <TenMH>Cá Voi</TenMH>
+        <MoTa>Thịt cá voi rất là ngon</MoTa>
+        <GiaCa>3000000</GiaCa>
+        <Anh>anhcavoi.png</Anh>
+        <MaLoai>LMH01</MaLoai>
+        <MaNCC>NCC02</MaNCC>
+    </MatHang>
+    <MatHang>
+        <MaMH>MH002</MaMH>
+        <TenMH>Cá Chình Chình</TenMH>
+        <MoTa>Thịt cá chình rất ngon</MoTa>
+        <GiaCa>4000000</GiaCa>
+        <Anh>anhcachinh.png</Anh>
+        <MaLoai>LMH01</MaLoai>
+        <MaNCC>NCC04</MaNCC>
+    </MatHang>
+    <MatHang>
+        <MaMH>MH003</MaMH>
+        <TenMH>Vợt Cá</TenMH>
+        <MoTa>Vợt cá chính hàng</MoTa>
+        <GiaCa>4000000</GiaCa>
+        <Anh>anhvotca.png</Anh>
+        <MaLoai>LMH04</MaLoai>
+        <MaNCC>NCC02</MaNCC>
+    </MatHang>
+    <MatHang>
+        <MaMH>MH004</MaMH>
+        <TenMH>Vợt Cá</TenMH>
+        <MoTa>Vợt cá chính hàng</MoTa>
+        <GiaCa>4000000</GiaCa>
+        <Anh>anhvotca.png</Anh>
+        <MaLoai>LMH04</MaLoai>
+        <MaNCC>NCC02</MaNCC>
+    </MatHang>
+    <MatHang>
+        <MaMH>MH005</MaMH>
+        <TenMH>Vợt Cá</TenMH>
+        <MoTa>Thuốt cá tăng cân chính hàng</MoTa>
+        <GiaCa>4000000</GiaCa>
+        <Anh>anhvotca.png</Anh>
+        <MaLoai>LMH04</MaLoai>
+        <MaNCC>NCC02</MaNCC>
+    </MatHang>
+    <HoaDon>
+        <MaHD>HD001</MaHD>
+        <MaKH>KH002</MaKH>
+        <NgayBan>2020-07-02</NgayBan>
+        <TinhTrang>Đã thanh toán</TinhTrang>
+    </HoaDon>
+    <HoaDon>
+        <MaHD>HD002</MaHD>
+        <MaKH>KH003</MaKH>
+        <NgayBan>2020-07-02</NgayBan>
+        <TinhTrang>Đã thanh toán</TinhTrang>
+    </HoaDon>
+    <HoaDon>
+        <MaHD>HD003</MaHD>
+        <MaKH>KH004</MaKH>
+        <NgayBan>2020-07-02</NgayBan>
+        <TinhTrang>Đã thanh toán</TinhTrang>
+    </HoaDon>
+    <HoaDon>
+        <MaHD>HD004</MaHD>
+        <MaKH>KH005</MaKH>
+        <NgayBan>2020-07-02</NgayBan>
+        <TinhTrang>Đã thanh toán</TinhTrang>
+    </HoaDon>
+    <HoaDon>
+        <MaHD>HD005</MaHD>
+        <MaKH>KH002</MaKH>
+        <NgayBan>2020-07-02</NgayBan>
+        <TinhTrang>Đã thanh toán</TinhTrang>
+    </HoaDon>
+    <ChiTietHoaDon>
+        <MaHD>HD001</MaHD>
+        <MaMH>MH002</MaMH>
+        <SoLuong>20</SoLuong>
+    </ChiTietHoaDon>
+    <ChiTietHoaDon>
+        <MaHD>HD002</MaHD>
+        <MaMH>MH003</MaMH>
+        <SoLuong>20</SoLuong>
+    </ChiTietHoaDon>
+    <ChiTietHoaDon>
+        <MaHD>HD003</MaHD>
+        <MaMH>MH004</MaMH>
+        <SoLuong>20</SoLuong>
+    </ChiTietHoaDon>
+    <ChiTietHoaDon>
+        <MaHD>HD004</MaHD>
+        <MaMH>MH001</MaMH>
+        <SoLuong>20</SoLuong>
+    </ChiTietHoaDon>
+    <ChiTietHoaDon>
+        <MaHD>HD005</MaHD>
+        <MaMH>MH002</MaMH>
+        <SoLuong>20</SoLuong>
+    </ChiTietHoaDon>
+    <LoaiMH>
+        <MaLoai>LMH01</MaLoai>
+        <TenLoai>Cá biển</TenLoai>
+    </LoaiMH>
+    <LoaiMH>
+        <MaLoai>LMH02</MaLoai>
+        <TenLoai>Cá nước ngọt</TenLoai>
+    </LoaiMH>
+    <LoaiMH>
+        <MaLoai>LMH03</MaLoai>
+        <TenLoai>Thức ăn</TenLoai>
+    </LoaiMH>
+    <LoaiMH>
+        <MaLoai>LMH04</MaLoai>
+        <TenLoai>trang Trí</TenLoai>
+    </LoaiMH>
+    <LoaiMH>
+        <MaLoai>LMH05</MaLoai>
+        <TenLoai>Thực phẩm chức năng</TenLoai>
+    </LoaiMH>
+    <NhaCungCap>
+        <MaNCC>NCC01</MaNCC>
+        <TenNCC>Lê Hoàng Nam</TenNCC>
+        <DiaChi>Ninh Thượng</DiaChi>
+        <SDT>123456789</SDT>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC02</MaNCC>
+        <TenNCC>Tạ Long Pheeee</TenNCC>
+        <DiaChi>Ninh An</DiaChi>
+        <SDT>123456789</SDT>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC03</MaNCC>
+        <TenNCC>Nguyễn Thành Lẽn</TenNCC>
+        <DiaChi>Bình Đinh</DiaChi>
+        <SDT>0979377702</SDT>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC04</MaNCC>
+        <TenNCC>YTB Nhật Trường</TenNCC>
+        <DiaChi>Gờ Cu</DiaChi>
+        <SDT>798875675</SDT>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC05</MaNCC>
+        <TenNCC>Nam Lô Đề</TenNCC>
+        <DiaChi>Nhà giam Ninh Giang</DiaChi>
+        <SDT>123456789</SDT>
+    </NhaCungCap>
+    <NhaCungCap>
+        <MaNCC>NCC06</MaNCC>
+        <TenNCC>Đặng Thị Hoài Nheee</TenNCC>
+        <DiaChi>Đá Bàn</DiaChi>
+        <SDT>93749093</SDT>
+    </NhaCungCap>
+    <KhachHang>
+        <MaKH>KH001</MaKH>
+        <TenKH>Anh Ba Khải 1234</TenKH>
+        <DiaChi>Rừng</DiaChi>
+        <SDT>0979377702</SDT>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH002</MaKH>
+        <TenKH>Shaco</TenKH>
+        <DiaChi>Bùa xanh</DiaChi>
+        <SDT>123546789</SDT>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH003</MaKH>
+        <TenKH>LeeSin</TenKH>
+        <DiaChi>Bùa Đỏ</DiaChi>
+        <SDT>897778874</SDT>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH004</MaKH>
+        <TenKH>Trymdame</TenKH>
+        <DiaChi>Nhà chính</DiaChi>
+        <SDT>0964869384</SDT>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH005</MaKH>
+        <TenKH>Xayye</TenKH>
+        <DiaChi>Cạnh bờ hồ</DiaChi>
+        <SDT>8969630475</SDT>
+    </KhachHang>
+</QLBC>

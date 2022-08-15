@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QLLOP SYSTEM "file:/D:/CongNghe_XML_VaUngDung/BTChuong7_XSLT/BT1/QLLop.dtd">
+<?xml-stylesheet type="text/xsl" href="Bai1.xsl"?>
+<QLLOP>
+    <Lop>
+        <MaLop>CNTT16</MaLop>
+        <TenLop>Công nghệ thông tin 2017</TenLop>
+    </Lop>
+    <Lop>
+        <MaLop>TCKT17</MaLop>
+        <TenLop>Tài chính kế toán 2017</TenLop>
+    </Lop>
+    <Lop>
+        <MaLop>TKDH15</MaLop>
+        <TenLop>Thiết kế đồ họa</TenLop>
+    </Lop>
+</QLLOP>

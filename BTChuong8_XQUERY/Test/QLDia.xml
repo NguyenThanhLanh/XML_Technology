@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SPECIALS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/CongNghe_XML_VaUngDung/BTChuong4_Schema/BT8/QLDia.xsd">
+    <TITLE>Khong nghe gì hết</TITLE>
+    <MESSAGE>Không nghe thì thôi</MESSAGE>
+    <CD>
+        A ơi
+        <ARTIST>Khá Bảnh</ARTIST>
+        <PRICEUS>Lên Luôn</PRICEUS>
+        <PRICEVN>Ngô Bá Khá</PRICEVN>   
+        <TRACK LENGTH="5">Kép Bi Sầu</TRACK>
+    </CD>
+    <CD>
+        Ước m
+        <ARTIST>Chiều hôm ấy</ARTIST>
+        <PRICEUS>Không có em về nhà</PRICEUS>
+        <PRICEVN>Căn nhà vắn như chuồng heo</PRICEVN>
+        <TRACK LENGTH="6">Nên em đã đi đâu vậy</TRACK>
+    </CD>
+    <CD>
+        Xuan 1 va Xuan 2
+        <ARTIST>Tôi không thích</ARTIST>
+        <PRICEUS>Ma Rack</PRICEUS>
+        <PRICEVN>Chiều thu</PRICEVN>
+        <TRACK LENGTH="7">Công nghệ var</TRACK>
+    </CD>
+</SPECIALS>

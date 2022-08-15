@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QLDiemDanh xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/CongNghe_XML_VaUngDung/BTChuong4/Bai5_rework.xsd">
+    <Lop>
+        <MaLop>56TH</MaLop>
+        <DateTime Month="3" Year="2017">
+            <DSSVVang>
+                <SinhVien>
+                    <MSSV>56160342</MSSV>
+                    <HoVaTen>Khuong Huu Duc</HoVaTen>
+                    <SoLanVang>3</SoLanVang>
+                    <LyDoVang>Khong ly do</LyDoVang>
+                </SinhVien>
+                <SinhVien>
+                    <MSSV>56234980</MSSV>
+                    <HoVaTen>Le Thi Hien</HoVaTen>
+                    <SoLanVang>2</SoLanVang>
+                    <LyDoVang>Benh</LyDoVang>
+                </SinhVien>
+            </DSSVVang>
+        </DateTime>
+    </Lop>
+</QLDiemDanh>

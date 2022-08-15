@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="QLBH">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="MatHang" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaMH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z]{2}[0-9]{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenMH" type="xs:string"/>
+                            <xs:element name="DonGia" type="xs:unsignedInt"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="HoaDon" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaHD">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[H][D][0-9]{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MaKhachHang">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z]{2}[0-9]{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenKhachHang" type="xs:string"/>
+                            <xs:element name="DiaChi">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]*[a-zA-Z]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="DSMatHangMua">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaMH">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:pattern value="[0-9]*[xs:string]"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="TenMH" type="xs:string"/>
+                                        <xs:element name="SoLuong" type="xs:unsignedInt"/>
+                                        <xs:element name="DonGia" type="xs:unsignedInt"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Key_MatHang">
+            <xs:selector xpath="MatHang"/>
+            <xs:field xpath="MaMH"/>
+        </xs:key>
+        <xs:keyref name="Key_DSMH_MH" refer="Key_MatHang">
+            <xs:selector xpath="DSMatHangMua"/>
+            <xs:field xpath="MaMH"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

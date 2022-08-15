@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <Customers>
+        <Customer>
+            <FirstName>Bruce</FirstName>
+            <MiddleIntial/>
+            <LastName>Lee</LastName>
+        </Customer>
+        <Customer FirstName="Long" MiddleIntial="Tieu" LastName="Ly"/>
+    </Customers>
+</document>

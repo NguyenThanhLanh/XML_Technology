@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLSach">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="LinhVuc">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaLinhVuc">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z]{2}[0-9]{2}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TenLinhVuc" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="TacGia">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaTacGia"/>
+                            <xs:element name="TenTacGIa"/>
+                            <xs:element name="DiaChi"/>
+                            <xs:element name="SDT"/>
+                            <xs:element name="Email"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Sach">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MaSach"/>
+                            <xs:element name="TenSach"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="LoaiSach">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Xuatban"/>
+                            <xs:element name="ChuaXuatBan"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

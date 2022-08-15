@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSKhachSan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/CongNghe_XML_VaUngDung/BTChuong4/Bai7_QLKS.xsd">
+    <KhachSan>
+        <DsLoaiPhong>
+            <LoaiPhong>
+                <MaLoai>LP001</MaLoai>
+                <TenLoai>Thường</TenLoai>
+                <DonGia>40000</DonGia>
+            </LoaiPhong>
+            <LoaiPhong>
+                <MaLoai>LP002</MaLoai>
+                <TenLoai>VIP</TenLoai>
+                <DonGia>60000</DonGia>
+            </LoaiPhong>
+        </DsLoaiPhong>
+        <DsPhong>
+            <Phong>
+                <MaPhong>PH01</MaPhong>
+                <TenPhong>Một đêm say</TenPhong>
+                <Lau>2</Lau>
+                <Sdt>0979377702</Sdt>
+                <MaLoai>LP001</MaLoai>
+            </Phong>
+            <Phong>
+                <MaPhong>PH02</MaPhong>
+                <TenPhong>Mãi bên nhau bạn nhé</TenPhong>
+                <Lau>2</Lau>
+                <Sdt>0923423478</Sdt>
+                <MaLoai>LP001</MaLoai>
+            </Phong>
+            <Phong>
+                <MaPhong>PH03</MaPhong>
+                <TenPhong>Chùm khế quê hương</TenPhong>
+                <Lau>3</Lau>
+                <Sdt>0978456789</Sdt>
+                <MaLoai>LP002</MaLoai>
+            </Phong>
+            <Phong>
+                <MaPhong>PH04</MaPhong>
+                <TenPhong>Đương lên thiên cảnh</TenPhong>
+                <Lau>3</Lau>
+                <Sdt>0987678578</Sdt>
+                <MaLoai>LP002</MaLoai>
+            </Phong>
+        </DsPhong>
+        <DsDichVu>
+            <DichVu>
+                <MaDichVu>DV01</MaDichVu>
+                <TenDichVu>Massage</TenDichVu>
+                <DonGia>30000</DonGia>
+            </DichVu>
+            <DichVu>
+                <MaDichVu>DV02</MaDichVu>
+                <TenDichVu>Tay vịn</TenDichVu>
+                <DonGia>50000</DonGia>
+            </DichVu>
+        </DsDichVu>
+        <DsKhachHang>
+            <KhachHang>
+                <MaKH>KH00001</MaKH>
+                <TenKH>Putin</TenKH>
+                <Cmnd>123456789</Cmnd>
+                <SoDT>0979789709</SoDT>
+            </KhachHang>
+            <KhachHang>
+                <MaKH>KH00002</MaKH>
+                <TenKH>Joe Biden</TenKH>
+                <Cmnd>567878906</Cmnd>
+                <SoDT>1234567890</SoDT>
+            </KhachHang>
+            <KhachHang>
+                <MaKH>KH00003</MaKH>
+                <TenKH>Elon Musk</TenKH>
+                <Cmnd>736480274</Cmnd>
+                <SoDT>1234567890</SoDT>
+            </KhachHang>
+        </DsKhachHang>
+        <DSHoaDon>
+            <HoaDon>
+                <MaHD>HD00001</MaHD>
+                <MaKH>KH00001</MaKH>
+                <NgayDen>2012-07-03</NgayDen>
+                <NgayDi>2012-07-19</NgayDi>
+                <MaPhong>PH04</MaPhong>
+                <MaDV>DV02</MaDV>
+                <ThanhTien>1392048</ThanhTien>
+            </HoaDon>
+            <HoaDon>
+                <MaHD>HD00002</MaHD>
+                <MaKH>KH00002</MaKH>
+                <NgayDen>2012-07-03</NgayDen>
+                <NgayDi>2012-07-30</NgayDi>
+                <MaPhong>PH03</MaPhong>
+                <ThanhTien>300000</ThanhTien>
+            </HoaDon>
+            <HoaDon>
+                <MaHD>HD00003</MaHD>
+                <MaKH>KH00003</MaKH>
+                <NgayDen>2021-07-03</NgayDen>
+                <NgayDi>2022-07-09</NgayDi>
+                <MaPhong>PH02</MaPhong>
+                <ThanhTien>400000</ThanhTien>
+            </HoaDon>
+        </DSHoaDon>
+    </KhachSan>
+</DSKhachSan>

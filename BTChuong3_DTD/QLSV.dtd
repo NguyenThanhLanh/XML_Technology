@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT document (sinhviens)*>
+<!ELEMENT sinhviens (sinhvien)* >
+<!ELEMENT sinhvien (MaSV, HoTen, Lop, Mon*) >
+<!ELEMENT MaSV (#PCDATA) >
+<!ELEMENT HoTen (#PCDATA) >
+<!ELEMENT Lop (#PCDATA) >
+<!ELEMENT Mon (MaMon, TenMon, SoTC, Diem ) >
+<!ELEMENT MaMon (#PCDATA) >
+<!ELEMENT TenMon (#PCDATA) >
+<!ELEMENT SoTC (#PCDATA) >
+<!ELEMENT Diem (#PCDATA) >

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="DSKhachSan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="KhachSan" maxOccurs="unbounded" minOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="DsLoaiPhong" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="LoaiPhong" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MaLoai" minOccurs="1" maxOccurs="1">
+                                                  <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:pattern value="LP[0-9]{3}"/>
+                                                    </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="TenLoai" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                                  <xs:element name="DonGia" type="xs:double" minOccurs="1" maxOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DsPhong" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Phong" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MaPhong" minOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="PH[0-9]{2}"></xs:pattern>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="TenPhong" type="xs:string" minOccurs="1"/>
+                                                  <xs:element name="Lau" type="xs:unsignedByte" minOccurs="1"/>
+                                                  <xs:element name="Sdt" minOccurs="1" >
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="[0-9]{10}"></xs:pattern>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="MaLoai" minOccurs="1" maxOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="LP[0-9]{3}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DsDichVu" maxOccurs="1" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DichVu" minOccurs="1" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MaDichVu" minOccurs="1" maxOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="DV[0-9]{2}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="TenDichVu" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                                  <xs:element name="DonGia" type="xs:double" minOccurs="1" maxOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DsKhachHang" maxOccurs="unbounded" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="KhachHang" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MaKH" maxOccurs="1" minOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="KH[0-9]{5}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="TenKH" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                                  <xs:element name="DiaChi" minOccurs="0" type="xs:string"/>
+                                                  <xs:element name="Cmnd" minOccurs="1" maxOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="[0-9]{9}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="SoDT" minOccurs="1" maxOccurs="unbounded">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="[0-9]{10}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DSHoaDon" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="HoaDon" maxOccurs="unbounded" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="MaHD" minOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="HD[0-9]{5}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="MaKH" minOccurs="1" maxOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="KH[0-9]{5}"/>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="NgayDen" minOccurs="1" maxOccurs="1" type="xs:date"/>
+                                                    <xs:element name="NgayDi" minOccurs="1" maxOccurs="1" type="xs:date"/>
+                                                  <xs:element name="MaPhong" minOccurs="1" maxOccurs="1">
+                                                      <xs:simpleType>
+                                                          <xs:restriction base="xs:string">
+                                                              <xs:pattern value="PH[0-9]{2}"></xs:pattern>
+                                                          </xs:restriction>
+                                                      </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="MaDV" minOccurs="0" maxOccurs="unbounded"/>
+                                                  <xs:element name="ThanhTien" type="xs:double" minOccurs="1" maxOccurs="1"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="MaKS">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="KS[0-9]{9}"></xs:pattern>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="TenKhachSan" type="xs:string"/>
+                        <xs:attribute name="DiaChi" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="KhachSan">
+            <xs:selector xpath="KhachSan"/>
+            <xs:field xpath="MaKS"/>
+        </xs:unique>
+        <xs:key name="KhachHang_key">
+            <xs:selector xpath="KhachHang"/>
+            <xs:field xpath="MaKH"/>
+        </xs:key>
+        <xs:key name="LoaiPhong_Key">
+            <xs:selector xpath="LoaiPhong"/>
+            <xs:field xpath="MaLoai"/>
+        </xs:key>
+        <xs:keyref name="Phong_LoaiPHong_Key" refer="LoaiPhong_Key">
+            <xs:selector xpath="Phong"/>
+            <xs:field xpath="MaLoai"/>
+        </xs:keyref>
+        <xs:key name="Phong_Key">
+            <xs:selector xpath="Phong"/>
+            <xs:field xpath="MaPhong"/>
+        </xs:key>
+        <xs:keyref name="HoaDon_DichVu_Key" refer="DichVu_Key">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="MaDV"/>
+        </xs:keyref>
+        <xs:keyref name="HoaDon_Phong_Key" refer="Phong_Key">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="MaPhong"/>
+        </xs:keyref>
+        <xs:keyref name="HoaDon_KH_Key" refer="KhachHang_key">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="MaKH"/>
+        </xs:keyref>
+        <xs:key name="HoaDon_Key">
+            <xs:selector xpath="HoaDon"/>
+            <xs:field xpath="MaHD"/>
+        </xs:key>
+        <xs:key name="DichVu_Key">
+            <xs:selector xpath="DichVu"/>
+            <xs:field xpath="MaDichVu"/>
+        </xs:key>
+    </xs:element>
+</xs:schema>

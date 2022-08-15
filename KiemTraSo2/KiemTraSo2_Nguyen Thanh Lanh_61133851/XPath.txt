@@ -1,0 +1,3 @@
+
+a. //Sach[MaSach=(//ChiTietMuon[year-from-date(NgayMuon)=2019]/MaSach)]/child::* 
+b. count(//ChiTietMuon[year-from-date(NgayMuon)=2019]/MaSach)

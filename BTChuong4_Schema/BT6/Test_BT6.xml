@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QLBH xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/CongNghe_XML_VaUngDung/BTChuong4/Bai6.xsd">
+    <MatHang>
+        <Name>paper</Name>
+        <InventoryID>F12333</InventoryID>
+        <Unit_Price>1.22</Unit_Price>
+        <Stock_Bin>B789</Stock_Bin>
+    </MatHang>
+    <MatHang>
+        <Name>clips</Name>
+        <InventoryID>Z55557</InventoryID>
+        <Unit_Price>22.33</Unit_Price>
+        <Stock_Bin>B123</Stock_Bin>
+    </MatHang>
+</QLBH>

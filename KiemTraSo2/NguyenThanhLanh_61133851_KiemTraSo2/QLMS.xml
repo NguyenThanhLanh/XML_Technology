@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QLMS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="QLMS.xsd">
+    <TheLoais>
+        <TheLoai>
+            <MaTL>01</MaTL>
+            <TenTL>Văn học nghệ thuật</TenTL>
+        </TheLoai>
+        <TheLoai>
+            <MaTL>02</MaTL>
+            <TenTL>Khoa học kỹ thuật</TenTL>
+        </TheLoai>
+        <TheLoai>
+            <MaTL>03</MaTL>
+            <TenTL>Công nghệ thông tin</TenTL>
+        </TheLoai>
+        <TheLoai>
+            <MaTL>04</MaTL>
+            <TenTL>Công nghệ hóa học</TenTL>
+        </TheLoai>
+        <TheLoai>
+            <MaTL>05</MaTL>
+            <TenTL>Đạo làm người</TenTL>
+        </TheLoai>
+    </TheLoais>
+    <Sachs>
+        <Sach>
+            <MaSach>A10101</MaSach>
+            <TenSach>Giáo Trình CSDL</TenSach>
+            <TacGia>Đinh Mạnh Tường</TacGia>
+            <MaTL>03</MaTL>
+        </Sach>
+        <Sach>
+            <MaSach>B10219</MaSach>
+            <TenSach>Giáo trình tin học ứng dụng</TenSach>
+            <TacGia>Trần Công Minh</TacGia>
+            <MaTL>03</MaTL>
+        </Sach>
+        <Sach>
+            <MaSach>C10084</MaSach>
+            <TenSach>Cơ sở Thông Tin</TenSach>
+            <TacGia>Nguyễn Thành Lãnh</TacGia>
+            <MaTL>02</MaTL>
+        </Sach>
+        <Sach>
+            <MaSach>D00573</MaSach>
+            <TenSach>Cafe cùng Tony</TenSach>
+            <TacGia>Emploment</TacGia>
+            <MaTL>01</MaTL>
+        </Sach>
+        <Sach>
+            <MaSach>F09807</MaSach>
+            <TenSach>Tạp chí thời trang</TenSach>
+            <TacGia>Cao Văn La</TacGia>
+            <MaTL>04</MaTL>
+        </Sach>
+    </Sachs>
+    <TheDocGias>
+        <TheDocGia>
+            <MaThe>PM0001</MaThe>
+            <TenDG>Nguyễn Thành Lãnh</TenDG>
+            <DiaChi>Nha Trang, Khánh Hòa</DiaChi>
+            <NgayCap>2019-09-02</NgayCap>
+        </TheDocGia>
+        <TheDocGia>
+            <MaThe>PM0002</MaThe>
+            <TenDG>Nguyễn Thành Chung</TenDG>
+            <DiaChi>Nha Trang, Khánh Hòa</DiaChi>
+            <NgayCap>2019-09-02</NgayCap>
+        </TheDocGia>
+        <TheDocGia>
+            <MaThe>PM0003</MaThe>
+            <TenDG>Nguyễn Thành Chung</TenDG>
+            <DiaChi>Nha Trang, Khánh Hòa</DiaChi>
+            <NgayCap>2019-09-02</NgayCap>
+        </TheDocGia>
+        <TheDocGia>
+            <MaThe>PM0004</MaThe>
+            <TenDG>Nguyễn Thành Chung</TenDG>
+            <DiaChi>Nha Trang, Khánh Hòa</DiaChi>
+            <NgayCap>2019-09-02</NgayCap>
+        </TheDocGia>
+        <TheDocGia>
+            <MaThe>PM0005</MaThe>
+            <TenDG>Nguyễn Thành Chung</TenDG>
+            <DiaChi>Nha Trang, Khánh Hòa</DiaChi>
+            <NgayCap>2019-09-02</NgayCap>
+        </TheDocGia>
+    </TheDocGias>
+    <ChiTietMuons>
+        <ChiTietMuon>
+            <MaThe>PM0005</MaThe>
+            <MaSach>D00573</MaSach>
+            <NgayMuon>2012-03-01</NgayMuon>
+            <TaiCho>Về nhà</TaiCho>
+        </ChiTietMuon>
+        <ChiTietMuon>
+            <MaThe>PM0005</MaThe>
+            <MaSach>D00573</MaSach>
+            <NgayMuon>2012-03-02</NgayMuon>
+            <NgayTra>2012-03-29</NgayTra>
+            <TaiCho>Về nhà</TaiCho>
+        </ChiTietMuon>
+        <ChiTietMuon>
+            <MaThe>PM0005</MaThe>
+            <MaSach>D00573</MaSach>
+            <NgayMuon>2012-03-03</NgayMuon>
+            <NgayTra>2012-03-20</NgayTra>
+            <TaiCho>Về nhà</TaiCho>
+        </ChiTietMuon>
+        <ChiTietMuon>
+            <MaThe>PM0005</MaThe>
+            <MaSach>D00573</MaSach>
+            <NgayMuon>2012-03-04</NgayMuon>
+            <TaiCho>Về nhà</TaiCho>
+        </ChiTietMuon>
+        <ChiTietMuon>
+            <MaThe>PM0005</MaThe>
+            <MaSach>D00573</MaSach>
+            <NgayMuon>2012-03-05</NgayMuon>
+            <TaiCho>Về nhà</TaiCho>
+        </ChiTietMuon>
+        
+    </ChiTietMuons>
+    <LePhis>
+        <LePhi>
+            <MaThe>PM0001</MaThe>
+            <Nam>2001</Nam>
+            <LePhi>8000</LePhi>
+        </LePhi>
+        <LePhi>
+            <MaThe>PM0001</MaThe>
+            <Nam>2002</Nam>
+            <LePhi>8000</LePhi>
+        </LePhi>
+        <LePhi>
+            <MaThe>PM0001</MaThe>
+            <Nam>2003</Nam>
+            <LePhi>8000</LePhi>
+        </LePhi>
+        <LePhi>
+            <MaThe>PM0001</MaThe>
+            <Nam>2004</Nam>
+            <LePhi>8000</LePhi>
+        </LePhi>
+        <LePhi>
+            <MaThe>PM0001</MaThe>
+            <Nam>2005</Nam>
+            <LePhi>8000</LePhi>
+        </LePhi>
+    </LePhis>
+</QLMS>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../BT2/QLSV.xsl"?>
+<QLSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/D:/CongNghe_XML_VaUngDung/BTChuong7_XSLT/BT2/SinhVien.xsd">
+    <SinhVien>
+        <MaSV>sv01</MaSV>
+        <TenSV>Phan Tuấn Cường</TenSV>
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>1993-03-03</NgaySinh>
+        <MaLop>CNTT16</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>sv02</MaSV>
+        <TenSV>Huỳnh Chí Tâm</TenSV>
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>1993-03-08</NgaySinh>
+        <MaLop>CNTT16</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>sv03</MaSV>
+        <TenSV>Vương Chí Dũng</TenSV>
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>1991-04-14</NgaySinh>
+        <MaLop>CNTT16</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>sv04</MaSV>
+        <TenSV>Phạm Đức Nguyên</TenSV>
+        <GioiTinh>Nam</GioiTinh>
+        <NgaySinh>1993-07-27</NgaySinh>
+        <MaLop>TCKT15</MaLop>
+    </SinhVien>
+    <SinhVien>
+        <MaSV>sv05</MaSV>
+        <TenSV>Trương Mỹ Yến Nhi</TenSV>
+        <GioiTinh>Nữ</GioiTinh>
+        <NgaySinh>1993-10-03</NgaySinh>
+        <MaLop>TCKT15</MaLop>
+    </SinhVien>
+    <Lop>
+        <MaLop>CNTT16</MaLop>
+        <TenLop>Công nghệ thông tin 2017</TenLop>
+    </Lop>
+    <Lop>
+        <MaLop>TCKT15</MaLop>
+        <TenLop>Tài chính kế toán 15</TenLop>
+    </Lop>
+</QLSV>

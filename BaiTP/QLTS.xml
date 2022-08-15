@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="QLTS.xsl"?>
+<QLTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="QLTS.xsd">
+    <KhachHang>
+        <MaKH>KH001</MaKH>
+        <HoDemKH>Lê Văn</HoDemKH>
+        <TenKH>Ba</TenKH>
+        <NgaySinh>1990-04-12</NgaySinh>
+        <DiaChi>Nha Trang</DiaChi>
+        <DienThoai>090.1234.209</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH002</MaKH>
+        <HoDemKH>Lê Thị</HoDemKH>
+        <TenKH>Lan</TenKH>
+        <NgaySinh>1997-10-17</NgaySinh>
+        <DiaChi>Ninh Hòa</DiaChi>
+        <DienThoai>091.3045.209</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH003</MaKH>
+        <HoDemKH>Lê Văn</HoDemKH>
+        <TenKH>Cầu</TenKH>
+        <NgaySinh>2020-05-06</NgaySinh>
+        <DiaChi>Bắc Ninh</DiaChi>
+        <DienThoai>098.7896.909</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH004</MaKH>
+        <HoDemKH>Cao Minh</HoDemKH>
+        <TenKH>Long</TenKH>
+        <NgaySinh>1889-09-07</NgaySinh>
+        <DiaChi>Ninh Thuận</DiaChi>
+        <DienThoai>099.7873.687</DienThoai>
+    </KhachHang>
+    <KhachHang>
+        <MaKH>KH005</MaKH>
+        <HoDemKH>Lê Văn</HoDemKH>
+        <TenKH>Long</TenKH>
+        <NgaySinh>2022-07-03</NgaySinh>
+        <DiaChi>Cam Lâm</DiaChi>
+        <DienThoai>098.8779.987</DienThoai>
+    </KhachHang>
+    <LoaiSach>
+        <MaLoai>L01</MaLoai>
+        <TenLoai>Thơ</TenLoai>
+    </LoaiSach>
+    <LoaiSach>
+        <MaLoai>L02</MaLoai>
+        <TenLoai>Tiểu Thuyết</TenLoai>
+    </LoaiSach>
+    <LoaiSach>
+        <MaLoai>L03</MaLoai>
+        <TenLoai>CNTT</TenLoai>
+    </LoaiSach>
+    <LoaiSach>
+        <MaLoai>L04</MaLoai>
+        <TenLoai>Kinh Doanh</TenLoai>
+    </LoaiSach>
+    <LoaiSach>
+        <MaLoai>L05</MaLoai>
+        <TenLoai>Truyện Hài</TenLoai>
+    </LoaiSach>
+    <Sach>
+        <MaSach>S001</MaSach>
+        <TenSach>Chứng Khoáng</TenSach>
+        <MaLoai>L04</MaLoai>
+        <GiaThue>500</GiaThue>
+    </Sach>
+    <Sach>
+        <MaSach>S002</MaSach>
+        <TenSach>Nhập Môn Lập Trình</TenSach>
+        <MaLoai>L03</MaLoai>
+        <GiaThue>500</GiaThue>
+    </Sach>
+    <Sach>
+        <MaSach>S003</MaSach>
+        <TenSach>Có Chàng Trai Viết Lên Cây</TenSach>
+        <MaLoai>L02</MaLoai>
+        <GiaThue>500</GiaThue>
+    </Sach>
+    <Sach>
+        <MaSach>S004</MaSach>
+        <TenSach>Truyện Kiều</TenSach>
+        <MaLoai>L01</MaLoai>
+        <GiaThue>500</GiaThue>
+    </Sach>
+    <Sach>
+        <MaSach>S005</MaSach>
+        <TenSach>Chuyện Của Tí</TenSach>
+        <MaLoai>L05</MaLoai>
+        <GiaThue>500</GiaThue>
+    </Sach>
+    <ThueSach>
+        <NgayThue>2022-08-01</NgayThue>
+        <MaSach>S001</MaSach>
+        <MaKH>KH001</MaKH>
+        <NgayTra>2023-08-09</NgayTra>
+    </ThueSach>
+    <ThueSach>
+        <NgayThue>2045-12-21</NgayThue>
+        <MaSach>S002</MaSach>
+        <MaKH>KH002</MaKH>
+        <NgayTra>2046-09-09</NgayTra>
+    </ThueSach>
+    <ThueSach>
+        <NgayThue>1998-08-30</NgayThue>
+        <MaSach>S005</MaSach>
+        <MaKH>KH004</MaKH>
+        <NgayTra>1999-07-02</NgayTra>
+    </ThueSach>
+    <ThueSach>
+        <NgayThue>2001-08-07</NgayThue>
+        <MaSach>S003</MaSach>
+        <MaKH>KH003</MaKH>
+        <NgayTra>2002-09-08</NgayTra>
+    </ThueSach>
+    <ThueSach>
+        <NgayThue>2022-07-09</NgayThue>
+        <MaSach>S002</MaSach>
+        <MaKH>KH005</MaKH>
+        <NgayTra>2022-09-07</NgayTra>
+    </ThueSach>
+    <ThueSach>
+        <NgayThue>2023-09-05</NgayThue>
+        <MaSach>S004</MaSach>
+        <MaKH>KH001</MaKH>
+        <NgayTra>2024-07-02</NgayTra>
+    </ThueSach>
+</QLTS>

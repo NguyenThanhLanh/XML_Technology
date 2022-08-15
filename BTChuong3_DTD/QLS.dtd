@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT QuanLySach ( DSLinhVuc) >
+<!ELEMENT DSLinhVuc (LinhVuc+) >
+<!ELEMENT LinhVuc ( TenLinhVuc, LoaiSach+) >
+<!ELEMENT TenLinhVuc (#PCDATA) >
+<!ELEMENT LoaiSach (Quyen)* >
+<!ELEMENT Quyen (TenTuaDe, TacGia+) >
+<!ELEMENT  TenTuaDe (#PCDATA) >
+<!ELEMENT  TacGia ( MaTG, TenTG, DiaChiTG, (SDT|ThongTinDocNhat)) >
+<!ELEMENT MaTG (#PCDATA) >
+<!ELEMENT TenTG (#PCDATA) >
+<!ELEMENT DiaChiTG (#PCDATA) >
+<!ELEMENT SDT (#PCDATA) >
+<!ELEMENT ThongTinDocNhat (#PCDATA) >

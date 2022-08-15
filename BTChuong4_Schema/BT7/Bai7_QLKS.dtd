@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT QuanLyKhachSan (KhachSan)+>
+<!ELEMENT KhachSan (TenKhachSan, DiaChi, DsLoaiPhong+, DsDichVu+, DsKhachHang) >
+
+<!ELEMENT TenKhachSan (#PCDATA) >
+
+<!ELEMENT DiaChi (#PCDATA) >
+
+<!ELEMENT DsLoaiPhong (LoaiPhong)+ >
+<!ELEMENT LoaiPhong (MaLoai, TenLoai, DonGia, DsPhong)+ >
+<!ELEMENT MaLoai (#PCDATA) >
+<!ELEMENT TenLoai (#PCDATA) >
+<!ELEMENT DonGia (#PCDATA) >
+<!ELEMENT DsPhong (Phong)+ >
+<!ELEMENT Phong (MaPhong, TenPhong, Lau, Sdt)+ >
+<!ELEMENT MaPhong (#PCDATA) >
+<!ELEMENT TenPhong (#PCDATA) >
+<!ELEMENT Lau (#PCDATA) >
+<!ELEMENT Sdt (#PCDATA) >
+
+<!ELEMENT DsDichVu (DichVu)+ >
+<!ELEMENT DichVu (MaDV, TenDV, DonGia)+ >
+<!ELEMENT MaDV (#PCDATA) >
+<!ELEMENT TenDV (#PCDATA) >
+<!ELEMENT DichVu:DonGia (#PCDATA) >
+
+<!ELEMENT DsKhachHang (KhachHang)+ >
+<!ELEMENT KhachHang (MaKH, TenKH, DiaChi, Cmnd, Sdt, DsHoadon)+ >
+<!ELEMENT MaKH (#PCDATA) >
+<!ELEMENT TenKH (#PCDATA) >
+<!ELEMENT KhachHang:DiaChi (#PCDATA) >
+<!ELEMENT Cmnd (#PCDATA) >
+<!ELEMENT KhachHang:Sdt (#PCDATA) >
+<!ELEMENT DsHoadon (HoaDon)+ >
+<!ELEMENT HoaDon (MaHD, NgayDen, NgayDi, MaPhong, MaDV, ThanhTien) >
+<!ELEMENT MaHD (#PCDATA) >
+<!ELEMENT NgayDen (#PCDATA) >
+<!ELEMENT NgayDi (#PCDATA) >
+<!ELEMENT HoaDon:MaPhong (#PCDATA) >
+<!ELEMENT HoaDon:MaDV (#PCDATA) >
+<!ELEMENT ThanhTien (#PCDATA) >

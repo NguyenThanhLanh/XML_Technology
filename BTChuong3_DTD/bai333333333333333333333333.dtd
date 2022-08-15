@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT DonHang (MaKH, TenKH, DiaChi, DSSP) >
+<!ELEMENT MaKH (#PCDATA) >
+<!ELEMENT TenKH (#PCDATA) >
+<!ELEMENT DiaChi (#PCDATA) >
+<!ELEMENT DSSP (SP)+ >
+<!ELEMENT SP (MaMH, TenMH, SoLuong, DonGia) >
+<!ELEMENT MaMH (#PCDATA) >
+<!ELEMENT TenMH (#PCDATA) >
+<!ELEMENT SoLuong (#PCDATA) >
+<!ELEMENT DonGia (#PCDATA) >

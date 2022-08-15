@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLMS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TheLoais" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TheLoai" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaTL" minOccurs="1" maxOccurs="1" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[0-9]{2}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="TenTL" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Sachs" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Sach" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaSach" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z][0-9]{5}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="TenSach" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                                        <xs:element name="TacGia" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                                        <xs:element name="MaTL" minOccurs="1" maxOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[0-9]{2}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="TheDocGias" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="TheDocGia" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaThe" minOccurs="1" maxOccurs="1">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="PM[0-9]{4}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="TenDG" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                                        <xs:element name="DiaChi" minOccurs="1" maxOccurs="1" type="xs:string"/>
+                                        <xs:element name="NgayCap" minOccurs="1" maxOccurs="1" type="xs:date"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ChiTietMuons" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ChiTietMuon" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaThe" minOccurs="1" maxOccurs="1" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="PM[0-9]{4}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element> 
+                                        <xs:element name="MaSach" minOccurs="1" maxOccurs="1" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[A-Z][0-9]{5}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="NgayMuon" minOccurs="1" maxOccurs="1" type="xs:date"/>
+                                        <xs:element name="NgayTra" minOccurs="0" maxOccurs="1" type="xs:date"/>
+                                        <xs:element name="TaiCho">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Về nhà"/>
+                                                    <xs:enumeration value="Tại chỗ"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="LePhis" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="LePhi" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="MaThe" minOccurs="1" maxOccurs="1" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="PM[0-9]{4}"></xs:pattern>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="Nam" minOccurs="1" maxOccurs="1" type="xs:integer" />
+                                        <xs:element name="LePhi" minOccurs="1" maxOccurs="1" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="TheLoai_Key">
+            <xs:selector xpath="TheLoai"/>
+            <xs:field xpath="MaTL"/>
+        </xs:key>
+        <xs:key name="Sach_Key">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaSach"/>
+        </xs:key>
+        <xs:key name="TheDocGia_Key">
+            <xs:selector xpath="TheDocGia"/>
+            <xs:field xpath="MaThe"/>
+        </xs:key>
+        <xs:key name="ChiTietMuon_Key">
+            <xs:selector xpath="ChiTietMuon"/>
+            <xs:field xpath="MaThe"/>
+            <xs:field xpath="MaSach"/>
+            <xs:field xpath="NgayMuon"/>
+        </xs:key>
+        <xs:key name="LePhi_Key">
+            <xs:selector xpath="MaThe"/>
+            <xs:field xpath="Nam"/>
+        </xs:key>
+        <xs:keyref name="Sach_TL_Key" refer="TheLoai_Key">
+            <xs:selector xpath="Sach"/>
+            <xs:field xpath="MaTL"/>
+        </xs:keyref>
+        <xs:keyref name="CTMuon_DocGia_Key" refer="TheDocGia_Key">
+            <xs:selector xpath="ChiTietMuon"/>
+            <xs:field xpath="MaThe"/>
+        </xs:keyref>
+        <xs:keyref name="CTMuon_Sach" refer="Sach_Key">
+            <xs:selector xpath="ChiTietMuon"/>
+            <xs:field xpath="MaSach"/>
+        </xs:keyref>
+        <xs:keyref name="LePhi_DocGia_Key" refer="TheDocGia_Key">
+            <xs:selector xpath="LePhi"/>
+            <xs:field xpath="MaThe"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
